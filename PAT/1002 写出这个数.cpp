@@ -11,8 +11,8 @@ int main()
 		sum += c - '0';
 	string t = to_string(sum);
 	int m = t.size();
-	for (int i = 0; i < m - 1; ++i)
+	cout << arr[t[0] - '0'];
+	for (int i = 1; i < m; ++i)
 		cout << arr[t[i] - '0'] << ' ';
-	cout << arr[t[m - 1] - '0'];
 	return 0;
 }
