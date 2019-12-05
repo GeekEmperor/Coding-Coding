@@ -13,7 +13,7 @@ int main()
 {
 	int m, n;
 	cin >> m >> n;
-	int count = 1;
+	int count = 0;
 	int i = 2, j = 1;
 	for (; j < m; ++i)
 		if (isprime(i))
@@ -21,25 +21,19 @@ int main()
 	for (; j < n; ++i)
 		if (isprime(i))
 		{
-			if (count == 10)
+			if (++count == 10)
 			{
 				cout << i << '\n';
-				count = 1;
+				count = 0;
 			}
 			else
-			{
 				cout << i << ' ';
-				++count;
-			}
 			++j;
 		}
 	for (; j == n; ++i)
 		if (isprime(i))
 		{
-			if (count == 10)
-				cout << i << '\n';
-			else
-				cout << i;
+			cout << i;
 			++j;
 		}
 	return 0;
