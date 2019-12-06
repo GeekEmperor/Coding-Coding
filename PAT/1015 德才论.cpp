@@ -40,6 +40,5 @@ int main()
 		for (stu& s : arr[i])
 			cout << s.num << ' ' << s.de << ' ' << s.cai << endl;
 	}
-	// system("pause");
 	return 0;
 }
