@@ -49,3 +49,4 @@ int main()
 		cout << 'J';
 	return 0;
 }
+
