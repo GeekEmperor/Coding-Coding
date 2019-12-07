@@ -26,4 +26,3 @@ int main()
 	cout << *max_element(matrix[n - 1].begin(), matrix[n - 1].end());
 	return 0;
 }
-
